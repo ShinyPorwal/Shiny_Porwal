@@ -1,4 +1,4 @@
-# Contact Mangement System
+# Contact Mangement System by Shiny Porwal
 
 ## A Django web application that facilitates CRUD (Create, Read, Update, Delete) operations on a contact list. Users can create new contacts, view contact details, update contact information, and delete contacts.
 
@@ -19,7 +19,7 @@
 
 <div style="display:flex; justify-content: space-between;">
   <div>
-    <p><strong> With `Number of Grains` : 500 (Parallel)</strong></p>
+    <p><strong> Some screenshots of the Implementation</strong></p>
     <img src="assets/homePage.png" />
     <img src="assets/confirmDelete.png" />
     <img src="assets/contactDetail.png"/>
