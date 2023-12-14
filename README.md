@@ -2,8 +2,6 @@
 
 ## A Django web application that facilitates CRUD (Create, Read, Update, Delete) operations on a contact list. Users can create new contacts, view contact details, update contact information, and delete contacts.
 
----
-
 ## Features
 - Create, read, update, and delete contacts.
 - Unique constraints on name and email fields.
@@ -11,10 +9,8 @@
 - Responsive and user-friendly interface.
 - Clear and intuitive navigation.
 
----
 ## Demo
 ![Alt Text](assets/demo.gif)
-
 
 ## Implementation Screenshots
 
@@ -32,8 +28,6 @@
   </div>
 </div>
   
-  
-
 # Contributors
 
 - Shiny Porwal
