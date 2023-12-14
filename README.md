@@ -29,6 +29,5 @@
 </div>
   
 # Contributors
-
 - Shiny Porwal
 
