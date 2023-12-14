@@ -13,7 +13,7 @@
 
 ---
 ## Demo
-![Alt Text](assets/demo.gif)
+![Alt Text](assets/demo.gif | width=400)
 ## Implementation Screenshots
 
 
