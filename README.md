@@ -22,7 +22,7 @@
   <div>
     <p><strong> Some screenshots of the Implementation</strong></p>
     <p align="center">
-    <img src="assets/demo.gif" width="600" alt="Alt Text">
+    <img src="assets/demo.gif" width="400" alt="Alt Text">
     </p>
     <img src="assets/homePage.png" />
     <img src="assets/confirmDelete.png" />
