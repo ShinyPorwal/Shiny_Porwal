@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: linear-gradient(to bottom, #303030, #505050);
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            background-color: #fff;
+            color: #333;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        td a {
+            margin-right: 5px;
+            color: #fff; /* Set the color of icons to white */
+        }
+
+        .no-contacts-message {
+            color: #ccc;
+            margin-top: 20px;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+            padding: 10px 0;
+            background-color: #222;
+            border-top: 1px solid #444;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Contact List</h1>
+
+        <div class="button-container">
+            <a href="{% url 'contactCreate' %}">Create New Contact</a>
+        </div>
+
+        {% if contacts %}
+            <table>
+                <tr>
+                    <th>Contact</th>
+                    <th>Email</th>
+                    <th>Created Time</th>
+                </tr>
+                {% for contact in contacts %}
+                    <tr>
+                        <td>
+                            <a href="{% url 'contactDetail' pk=contact.pk %}" title="View"><i class="fas fa-eye"></i></a>
+                            <a href="{% url 'contactDelete' pk=contact.pk %}" title="Delete"><i class="fas fa-trash"></i></a>
+                            {{ contact.name }}
+                        </td>
+                        <td>{{ contact.email }}</td>
+                        <td>{{ contact.created_at }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p class="no-contacts-message">No contacts. Add new contacts using the Create New Contact button.</p>
+        {% endif %}
+    </div>
+
+    <div class="copyright">
+        &copy; Created by Shiny Porwal.
+    </div>
+</body>
+</html>
