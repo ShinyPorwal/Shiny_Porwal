@@ -13,13 +13,17 @@
 
 ---
 ## Demo
-![Alt Text](assets/demo.gif | width=400)
-## Implementation Screenshots
+![Alt Text](assets/demo.gif)
 
+
+## Implementation Screenshots
 
 <div style="display:flex; justify-content: space-between;">
   <div>
     <p><strong> Some screenshots of the Implementation</strong></p>
+    <p align="center">
+    <img src="assets/demo.gif" width="600" alt="Alt Text">
+    </p>
     <img src="assets/homePage.png" />
     <img src="assets/confirmDelete.png" />
     <img src="assets/contactDetail.png"/>
