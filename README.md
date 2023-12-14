@@ -13,8 +13,7 @@
 
 ---
 ## Demo
-[![Video Thumbnail](assets/homePage.png)](assets/demo.mp4)
-
+![Alt Text](assets/demo.gif)
 ## Implementation Screenshots
 
 
