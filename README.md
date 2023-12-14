@@ -12,7 +12,8 @@
 - Clear and intuitive navigation.
 
 ---
-
+## Demo
+[![Video Thumbnail](assets/homePage.png)](assets/demo.mp4)
 
 ## Implementation Screenshots
 
@@ -33,5 +34,4 @@
 # Contributors
 
 - Shiny Porwal
-[(Back to top)](#contact-management-system-by-shiny-porwal)
 
