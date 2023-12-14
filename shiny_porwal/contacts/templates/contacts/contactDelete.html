@@ -74,7 +74,7 @@
         {% csrf_token %}
         <button type="submit">Delete</button>
     </form>
-    <a href="{% url 'contactDetail' pk=contact.pk %}">Cancel</a>
+    <a href="{% url 'contactList' %}">Cancel</a>
 
     <div class="copyright">
         &copy; Created by Shiny Porwal.
